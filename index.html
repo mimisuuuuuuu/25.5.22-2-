@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>디지털 자아 붕괴</title>
+  <style>
+    body {
+      background-color: black;
+      text-align: center;
+      color: white;
+      font-family: sans-serif;
+      margin-top: 50px;
+    }
+    img {
+      max-width: 60%;
+      height: auto;
+      border: 4px solid white;
+      border-radius: 10px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: #ff0055;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>디지털 자아 붕괴 시뮬레이션</h1>
+  <img id="myImage" src="stage1.jpg" alt="붕괴 전 자아">
+  <br>
+  <button onclick="changeImage()">추모하기</button>
+
+  <script>
+    let stage = 1;
+
+    function changeImage() {
+      if (stage === 1) {
+        document.getElementById("myImage").src = "stage2.jpg";
+        stage++;
+      }
+    }
+  </script>
+</body>
+</html>
